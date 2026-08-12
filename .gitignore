@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env files (root-level; subproject-specific env handling lives in their own .gitignore)
+.env
+.env*.local
+!.env.example
+
+# Logs
+*.log
