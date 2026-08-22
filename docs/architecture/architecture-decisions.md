@@ -60,6 +60,3 @@ Synchronous REST/JSON over HTTP has been choosen as the communication pattern be
 2. Workload fit - The embedding model chosen in decision 4 generates embeddings for short text in well under a second on CPU, making calls between steward-api and steward-ai quick and predictable. This is the scenario synchronous calls are suited for, rather than the slow or unpredictable workloads a message queue is intended to solve.
 3. Scale - Steward is a single-user, self-hosted application with low query volume. Both gRPC's multiplexing advantage and a message queue's backpressure and decoupling advantages target call frequencies and traffic patterns well beyond what Steward will produce.
 4. Simplicity and debugging - REST/JSON calls can be inspected directly with tools such as curl or a browser, and require no additional infrastructure (message broker, worker processes) or tooling (Protobuf code generation) to run and maintain.
-
-
-Add a short "Architecture" section/link in the root README.md pointing to the new document so it's discoverable.
