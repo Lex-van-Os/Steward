@@ -11,6 +11,9 @@ Steward is a self-hosted platform for enthusiasts of wine, whisky, cigars, and p
 4. **Recommendations are explained, not guessed**: when Steward suggests a pairing, it grounds the explanation in your actual notes and flavor data (a retrieval-augmented approach), so the reasoning is traceable rather than invented.
 5. Everything runs as a set of small, independent services (API, AI/recommendation engine, and web interface) behind a reverse proxy, self-hosted on a single machine.
 
+## Architecture
+Key architectural decisions for Steward's core stack are recorded in [docs/architecture/architecture-decisions.md](docs/architecture/architecture-decisions.md).
+
 ## Prerequisites
 WIP
 
